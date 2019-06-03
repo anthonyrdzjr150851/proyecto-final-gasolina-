@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Modulo suministro combustible</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->
+	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/iconic/css/material-design-iconic-font.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/noui/nouislider.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+<!--===============================================================================================-->
+</head>
+<body>
+
+<form action="conexion.php" method="post" class="contact_form"> 
+
+	<div class="container-contact100">
+		<div class="wrap-contact100">
+			<form class="contact100-form validate-form">
+				<span class="contact100-form-title">
+					Suministro combustible
+				</span>
+
+
+
+
+
+			<div class="wrap-input100 input100-select bg1">
+					<span class="label-input100">elige tu zona:</span>
+					<div>
+						<select class="js-select2" name="op1">
+							<option value="z centro">zona centro</option>
+							<option value="z altiplano">zona altiplano</option>
+							<option value="z media">zona media</option>
+							<option value="z huasteca">zona huasteca</option>
+						</select>
+						<div class="dropDownSelect2"></div>
+					</div>
+				</div>
+
+
+
+
+
+				<div class="wrap-input100 input100-select bg1">
+					<span class="label-input100">tipo de carga</span>
+					<div>
+						<select class="js-select2" name="op2">
+							<option value="normal">normal</option>
+							<option value="extraordinaria">extraordinaria</option>
+						</select>
+						<div class="dropDownSelect2"></div>
+					</div>
+				</div>
+
+
+
+
+
+
+				<div class="wrap-input100 input100-select bg1">
+					<span class="label-input100">tipo de persona</span>
+					<div>
+						<select class="js-select2" name="op3" required>
+							<option value="civil">civil</option>
+							<option value="empleado">empleado</option>
+						</select>
+						<div class="dropDownSelect2"></div>
+					</div>
+				</div>
+
+
+
+
+				<div class="wrap-input100 input100-select bg1">
+					<span class="label-input100">placas</span>
+					<div>
+						<input type="text" name="placas" required>
+						<div class="dropDownSelect2"></div>
+					</div>
+				
+
+
+
+
+				<div class="wrap-input100 input100-select bg1">
+					<span class="label-input100">marca (del vehiculo)</span>
+					<div>
+						<input type="text" name="marca" required;
+						<div class="dropDownSelect2"></div>
+					</div>
+				
+
+
+
+
+				<div class="wrap-input100 input100-select bg1">
+					<span class="label-input100">tipo (tipo de vehiculo)</span>
+					<div>
+						<input type="text" name="tipo" required;
+						<div class="dropDownSelect2"></div>
+					</div>
+				
+
+
+
+
+				<div class="wrap-input100 input100-select bg1">
+					<span class="label-input100">modelo (nombre del vehiculo)</span>
+					<div>
+						<input type="text" name="modelo" required;
+						<div class="dropDownSelect2"></div>
+					</div>
+				
+
+
+
+				<div class="wrap-input100 input100-select bg1">
+					<span class="label-input100">area (codigo postal)</span>
+					<div>
+						<input type="text" name="area" required;
+						<div class="dropDownSelect2"></div>
+					</div>
+				
+
+
+
+				<div class="wrap-input100 input100-select bg1">
+					<span class="label-input100">periodo de carga (matutino o vespertino)</span>
+					<div>
+						<input type="text" name="periodo" required;
+						<div class="dropDownSelect2"></div>
+					</div>
+				
+
+
+
+				<div class="wrap-input100 input100-select bg1">
+					<span class="label-input100">numero de vale(solo si tiene vale de gasolina ingreselo)</span>
+					<div>
+						<input type="text" name="vale" required;
+						<div class="dropDownSelect2"></div>
+					</div>
+				
+
+
+
+				<div class="wrap-input100 input100-select bg1">
+					<span class="label-input100">cantidad (cantidad en $)</span>
+					<div>
+						<input type="text" name="cantidad" required;
+						<div class="dropDownSelect2"></div>
+					</div>
+				
+
+
+
+				<div class="wrap-input100 input100-select bg1">
+					<span class="label-input100">fecha de carga  (AAMMDD)</span>
+					<div>
+						<input type="text" name="fechacarga" required;
+						<div class="dropDownSelect2"></div>
+					</div>
+				
+
+
+
+
+				<div class="wrap-input100 input100-select bg1">
+					<span class="label-input100">kilometraje</span>
+					<div>
+						<input type="text" name="kilometraje" required;
+						<div class="dropDownSelect2"></div>
+					</div>
+				
+
+
+
+
+				<div class="wrap-input100 input100-select bg1">
+					<span class="label-input100">carga real (litros)</span>
+					<div>
+						<input type="text" name="cargareal" required;
+						<div class="dropDownSelect2"></div>
+					</div>
+				
+
+
+
+				<div class="wrap-input100 input100-select bg1">
+					<span class="label-input100">nombre del conductor</span>
+					<div>
+						<input type="text" name="nombrecond" required;
+						<div class="dropDownSelect2"></div>
+					</div>
+				
+
+
+
+				<div class="wrap-input100 input100-select bg1">
+					<span class="label-input100">firma</span>
+					<div>
+						<input type="text" name="firma" required;
+						<div class="dropDownSelect2"></div>
+					</div>
+				
+
+
+
+
+
+
+
+
+				<div class="container-contact100-form-btn">
+					
+					<button class="contact100-form-btn"  type="submit">
+						<span>
+							Enviar
+							<i class="fa fa-long-arrow-right m-l-7" aria-hidden="true"></i>
+						</span>
+					</button>
+				
+
+
+			
+		</div>
+	</div>
+	
+	
+
+</form>
+
+	
+</body>
+</html>
