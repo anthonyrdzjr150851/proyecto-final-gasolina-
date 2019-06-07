@@ -29,51 +29,62 @@
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 <!--===============================================================================================-->
 </head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Login para 1 usuario</title>	
+
+
 
 <body>
-<SCRIPT  language=JavaScript> 
-function go(){
-if (document.form.password.value=='123' && document.form.login.value=='ADMI'){ 
-        document.form.submit(); 
-    } 
-    else{ 
-         alert("Porfavor ingrese, nombre de usuario y contraseña correctos."); 
-    } 
-} 
-</SCRIPT> 
-<FORM name=form action="eleccion.html" class="contact_form">
+
+<form action="conectarse.php" method="post" class="contact_form"> 
+
 
 	<div class="container-contact100">
 		<div class="wrap-contact100">
 			<form class="contact100-form validate-form">
 				<span class="contact100-form-title">
-					Suministro combustible
+					Consulta del ultimo registro de cada vehiculo
+
+				</span>
+				<span class="contact100-form-title">
+					<h3>Favor de buscar por placa del vehiculo</h3>
+
 				</span>
 
 
-					<div class="container-contact100-form-btn">	
 
-						<div class="wrap-input100 input100-select bg1">
-						<span class="label-input100">Usuario</span>
-						<div>
-							<INPUT type=text name=login aling="center" required;
-							<div class="dropDownSelect2"></div>
-						</div>
+				<br>
 
-						<div class="wrap-input100 input100-select bg1">
-						<span class="label-input100">Contraseña</span>
-						<div>
-							<INPUT type=password name=password aling="center" required; 
-							<div class="dropDownSelect2"></div>
-						</div>
+				<div class="wrap-input100 input100-select bg1">
+					<span class="label-input100">Placa del vehiculo</span>
+					<div>
+						<input type="text" name="placa" required="true
+						">
+						<div class="dropDownSelect2"></div>
+					</div>
 
 
+				<div class="container-contact100-form-btn">
+					<button class="contact100-form-btn"  type="submit">
+						<span>
+							Buscar
+							<i class="fa fa-long-arrow-right m-l-7" aria-hidden="true"></i>
+						</span>
+					</button>
+				</div>
 
-	<br>	
-<INPUT onclick=go() type=button value=Acceder>
+				<br>
+				<br>
+				<br>
 
-</FORM> 
+				<div align="left"><a href="eleccion.html"><h2><i class="fa fa-long-arrow-left m-l-7" aria-hidden="true"></i> REGRESAR</h2></a></div>
+	</div>
+	
+
+
+</form>
+
+		
 </body>
 </html>
+
+
+

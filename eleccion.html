@@ -29,51 +29,43 @@
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 <!--===============================================================================================-->
 </head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Login para 1 usuario</title>	
-
 <body>
-<SCRIPT  language=JavaScript> 
-function go(){
-if (document.form.password.value=='123' && document.form.login.value=='ADMI'){ 
-        document.form.submit(); 
-    } 
-    else{ 
-         alert("Porfavor ingrese, nombre de usuario y contraseña correctos."); 
-    } 
-} 
-</SCRIPT> 
-<FORM name=form action="eleccion.html" class="contact_form">
+
+<form action="conexion.php" method="post" class="contact_form"> 
 
 	<div class="container-contact100">
 		<div class="wrap-contact100">
 			<form class="contact100-form validate-form">
 				<span class="contact100-form-title">
-					Suministro combustible
+					bienvenido, ¿QUE DESEAS HACER?
 				</span>
 
 
-					<div class="container-contact100-form-btn">	
-
-						<div class="wrap-input100 input100-select bg1">
-						<span class="label-input100">Usuario</span>
-						<div>
-							<INPUT type=text name=login aling="center" required;
-							<div class="dropDownSelect2"></div>
-						</div>
-
-						<div class="wrap-input100 input100-select bg1">
-						<span class="label-input100">Contraseña</span>
-						<div>
-							<INPUT type=password name=password aling="center" required; 
-							<div class="dropDownSelect2"></div>
-						</div>
 
 
 
-	<br>	
-<INPUT onclick=go() type=button value=Acceder>
+				<div class="container-contact100-form-btn">
+					<a href="gasolina.html"><h1>Registrar vehiculo Civil</h1></a>
+				</div>
+				<br>
+				<hr>
+					<div class="container-contact100-form-btn">
+					<a href="gasolina2.html"><h1>Registrar vehiculo PGJ</h1></a>
+					</div>
+				<br>	
+				<hr>
+					<div class="container-contact100-form-btn">
+					<a href="consulta1.html"><h1>Consultar / Buscar</h1></a>
+					</div>
+				</div>
 
-</FORM> 
+				</div>
+				<br>
+	
+	
+
+</form>
+
+	
 </body>
 </html>

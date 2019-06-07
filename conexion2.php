@@ -31,8 +31,9 @@ if ($conn->connect_error) {
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
-$sql ="INSERT INTO civil1 (zona, tipo_carga, placas, marca, tipo, modelo, area, conductor, vale, cantidad, fecha_carga, kilometraje, carga_real, fecha_inicial, fecha_final, firma)VALUES ('$v1', '$v2', '$v3', '$v4', '$v5', '$v6', '$v7', '$v8', '$v9', '$v10', '$v16', '$v11', '$v12', '$v13', '$v14', '$v15')";
+$sql ="INSERT INTO empleados1 (zona, tipo_carga, placas, marca, tipo, modelo, area, conductor, vale, cantidad, fecha_carga, kilometraje, carga_real, fecha_inicial, fecha_final, firma)VALUES ('$v1', '$v2', '$v3', '$v4', '$v5', '$v6', '$v7', '$v8', '$v9', '$v10', '$v16', '$v11', '$v12', '$v13', '$v14', '$v15')";
 if ($conn->query($sql) === TRUE) {
+
 } else {
     echo "Error: " . $sql . "<br>" . $conn->error;
 }
