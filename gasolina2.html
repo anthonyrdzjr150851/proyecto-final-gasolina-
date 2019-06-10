@@ -34,15 +34,19 @@
 <form action="conexion2.php" method="post" class="contact_form"> 
 
 	<div class="container-contact100">
+
 		<div class="wrap-contact100">
+
+			<div align="center" class="wrap-input100 input100-select bg1">
+					<a href="eleccion.html"><h5>MENU PRINCIPAL</h5></a> 
+					<a href="gasolina.html"><h5>REGISTRO CIVILES</h5></a> 
+					<a href="consulta1.html"><h5>BUSQUEDA</h5></a>
+				</div> 
 			<form class="contact100-form validate-form">
+
 				<span class="contact100-form-title">
 					Suministro combustible | PGJ
 				</span>
-
-
-
-
 
 			<div class="wrap-input100 input100-select bg1">
 					<span class="label-input100">elige tu zona:</span>
@@ -87,99 +91,109 @@
 				<div class="wrap-input100 input100-select bg1">
 					<span class="label-input100">marca (del vehiculo)</span>
 					<div>
-						<input type="text" name="marca" required;
+						<input type="text" name="marca"  required>	
 						<div class="dropDownSelect2"></div>
 					</div>
-				
+					</div>
 
+                   <!-- pattern="[A-Z]+"-->
 
 				<div class="wrap-input100 input100-select bg1">
 					<span class="label-input100">tipo (tipo de vehiculo)</span>
 					<div>
-						<input type="text" name="tipo" required;
-						<div class="dropDownSelect2"></div>
-					</div>
-				
-
-
-				<div class="wrap-input100 input100-select bg1">
-					<span class="label-input100">modelo (nombre del vehiculo)</span>
-					<div>
-						<input type="text" name="modelo" required;
-						<div class="dropDownSelect2"></div>
-					</div>
-				
-
-
-				<div class="wrap-input100 input100-select bg1">
-					<span class="label-input100">Area o municipio</span>
-					<div>
-						<input type="text" name="area" required;
-						<div class="dropDownSelect2"></div>
-					</div>
-
-
-					<div class="wrap-input100 input100-select bg1">
-					<span class="label-input100">nombre del conductor</span>
-					<div>
-						<input type="text" name="nombrecond" required;
-						<div class="dropDownSelect2"></div>
-					</div>
-				
-				
-
-
-
-				<div class="wrap-input100 input100-select bg1">
-					<span class="label-input100">numero de vale (solo si tiene vale de gasolina ingreselo)</span>
-					<div>
-						<input type="text" name="vale" required;
-						<div class="dropDownSelect2"></div>
-					</div>
-				
-
-
-
-				<div class="wrap-input100 input100-select bg1">
-					<span class="label-input100">cantidad (cantidad en $)</span>
-					<div>
-						<input type="text" name="cantidad" required;
-						<div class="dropDownSelect2"></div>
-					</div>
-				
-				
-					<div class="wrap-input100 input100-select bg1">
-					<span class="label-input100">Fecha de Carga</span>
-					<div>
-						<input type="date" name="fere" required>
+						<input type="text" name="tipo" required>
 						<div class="dropDownSelect2"></div>
 					</div>
 				</div>
 
 
 				<div class="wrap-input100 input100-select bg1">
-					<span class="label-input100">kilometraje del auto</span>
+					<span class="label-input100">modelo (nombre del vehiculo)</span>
 					<div>
-						<input type="text" name="kilometraje" required;
+						<input type="text" name="modelo" required>
 						<div class="dropDownSelect2"></div>
 					</div>
+				</div>
+
+
+				<div class="wrap-input100 input100-select bg1">
+					<span class="label-input100">Area o municipio</span>
+					<div>
+						<input type="text" name="area" required>
+						<div class="dropDownSelect2"></div>
+					</div>
+				</div>
+
+					<div class="wrap-input100 input100-select bg1">
+					<span class="label-input100">nombre del conductor</span>
+					<div>
+						<input type="text" name="nombrecond" required>
+						<div class="dropDownSelect2"></div>
+					</div>
+				</div>
+
+				<div class="wrap-input100 input100-select bg1">
+					<span class="label-input100">numero de vale (solo si tiene vale de gasolina ingreselo, sino ingrese 8 ceros)</span>
+					<div>
+						<input type="number" name="vale" min="1" pattern="^[0-9]+"  required>
+						<div class="dropDownSelect2"></div>
+					</div>
+				</div>
+				<!-- minlength="8" -->
+
+
+
+				<div class="wrap-input100 input100-select bg1">
+					<span class="label-input100">cantidad (cantidad en $)</span>
+					<div>
+						<input name="cantidad" type="number" min="1" pattern="^[0-9]+" required>
+						<div class="dropDownSelect2"></div>
+					</div>
+				</div>
 				
 
 
 				<div class="wrap-input100 input100-select bg1">
+					<span class="label-input100">kilometraje del auto</span>
+					<div>
+						<input name="kilometraje" type="number" min="1" pattern="^[0-9]+" required>
+						<div class="dropDownSelect2"></div>
+					</div>
+				</div>
+
+
+					<!--
+					<div class="wrap-input100 input100-select bg1">
+					<span class="label-input100">Fecha de Carga</span>
+					<div>
+						<input type="date" name="fere" required>
+						<div class="dropDownSelect2"></div>
+					</div>
+				</div>    -->
+
+				<div class="wrap-input100 input100-select bg1">
 					<span class="label-input100">carga real (litros)</span>
 					<div>
-						<input type="text" name="cargareal" required;
+						<input name="cargareal" type="number" min="1" pattern="^[0-9]+" required>
 						<div class="dropDownSelect2"></div>
 					</div>
 
-
+				</div>
 
 
 					<div class="wrap-input100 input100-select bg1">
-					<span class="label-input100">Periodo</span>
+					<span class="label-input100">Periodo-inicio</span>
 					<div>
 						<input type="date" name="inicio" required>
+						<div class="dropDownSelect2"></div>
+					</div>
+				</div>
+
+
+					<div class="wrap-input100 input100-select bg1">
+					<span class="label-input100">Periodo-fin</span>
+					<div>
+						
 						<input type="date" name="fin" required>
 	
 						<div class="dropDownSelect2"></div>
@@ -189,9 +203,9 @@
 
 
 				<div class="wrap-input100 input100-select bg1">
-					<span class="label-input100">firma</span>
+					<span class="label-input100">Firma</span>
 					<div>
-						<input type="text" name="firma" required;
+						<input type="text" name="firma" required>
 						<div class="dropDownSelect2"></div>
 					</div>
 				
@@ -199,6 +213,9 @@
 
 
 
+
+
+					
 
 
 
